@@ -1,18 +1,18 @@
 class School
   attr_reader :school_name
   
-  roster = {}
+  @roster = {}
   
   def initialize(school_name)
-    @name = name
+    @school_name = school_name
   end
   
   def add_student(student_name, grade)
-    if roster.include?(grade)
-      roster[grade] = []
-      roster[grade] << student_name
+    if @roster.include?(grade)
+      @roster[grade] = []
+      @roster[grade] << student_name
     else
-      roster[grade] << student_name
+      @roster[grade] << student_name
     end
   end
     
