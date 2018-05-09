@@ -22,8 +22,9 @@ class School
   end
   
   def sort
+    new_hash = {}
     @roster.collect do |grade, student_name|
-     student_name.sort
+     grade.student_name.sort
     end
   end
 end
