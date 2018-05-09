@@ -23,8 +23,8 @@ class School
   
   def sort
     @roster.each do |grade, student_name|
-      student_name.each do |name|
-        name.sort
+      student_name.sort do |a, b|
+        a <=> b
       end
       @roster
     end
