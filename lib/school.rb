@@ -2,7 +2,7 @@ class School
   attr_reader :school_name
   
   def roster
-    @roster = {}
+  ROSTER = {}
   end
   
   GRADES_USED = []
