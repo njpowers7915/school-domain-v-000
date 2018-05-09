@@ -22,8 +22,7 @@ class School
   end
   
   def sort
-    @roster.collect do |grade, student_name|
-      grade[student_name.sort]
+    @roster.each {|k,v| v.sort!}
     end
   end
 end
