@@ -17,6 +17,7 @@ class School
     else
       @roster[grade] = []
       @roster[grade] << student_name
+      GRADES_USED << grade
     end
   end
     
