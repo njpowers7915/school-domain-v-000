@@ -23,6 +23,5 @@ class School
   
   def sort
     @roster.each_value {|v| v.sort!}
-    end
   end
 end
