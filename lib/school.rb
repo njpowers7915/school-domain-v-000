@@ -10,6 +10,8 @@ class School
   end
   
   def add_student(student_name, grade)
+    @roster.each do |
+    
     if @roster.include?(grade)
       @roster[grade] = []
       @roster[grade] << student_name
